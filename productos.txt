@@ -1,0 +1,6 @@
+{"title":"vaso","price":"150","thumbnail":"https://http2.mlstatic.com/D_NQ_NP_850877-MLA49830942226_052022-O.webp","id":1}
+{"title":"Taza","price":"200","thumbnail":"https://http2.mlstatic.com/D_NQ_NP_850877-MLA49830942226_052022-O.webp","id":2}
+{"title":"Vaso","price":"100","thumbnail":"https://http2.mlstatic.com/D_NQ_NP_850877-MLA49830942226_052022-O.webp","id":3}
+{"title":"Vaso","price":"100","thumbnail":"https://http2.mlstatic.com/D_NQ_NP_850877-MLA49830942226_052022-O.webp","id":4}
+{"title":"pantalon","price":"2500","thumbnail":"https://http2.mlstatic.com/D_NQ_NP_770674-MLA49029549687_022022-O.webp","id":5}
+{"title":"Remera","price":"3000","thumbnail":"https://http2.mlstatic.com/D_NQ_NP_682976-MLA43484762899_092020-O.webp","id":6}
