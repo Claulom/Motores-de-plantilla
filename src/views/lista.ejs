@@ -1,7 +1,8 @@
 <%- include( 'templates/head' ) %>
 <body>
     <%- include( 'templates/navbar' ) %>
-    <% if ( products.length == 0 ){ %>
+    <h1><%=message%></h1>
+    <% if(product.lenght == 0){ %>
         <div class="alert alert-warning m-auto" style="width: 25%;" role="alert">
             No se encontraron productos.
         </div>
@@ -15,11 +16,11 @@
                 </tr>
             </thead>
             <tbody>
-                <% products.forEach( product => { %>
+                <% product.forEach( productos => { %>
                     <tr scope="row">
-                        <td><%= product.title %></td>
-                        <td>$<%= product.price %></td>
-                        <td><img src="<%= product.thumbnail %>" alt="img" style="width: 80px; height: 80px;"></td>
+                        <td><%= productos.title %></td>
+                        <td>$<%= productos.price %></td>
+                        <td><img src="<%= productos.thumbnail %>" alt="img" style="width: 80px; height: 80px;"></td>
                     </tr>
                 <% }); %>
             </tbody>

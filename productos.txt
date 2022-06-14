@@ -4,3 +4,7 @@
 {"title":"Vaso","price":"100","thumbnail":"https://http2.mlstatic.com/D_NQ_NP_850877-MLA49830942226_052022-O.webp","id":4}
 {"title":"pantalon","price":"2500","thumbnail":"https://http2.mlstatic.com/D_NQ_NP_770674-MLA49029549687_022022-O.webp","id":5}
 {"title":"Remera","price":"3000","thumbnail":"https://http2.mlstatic.com/D_NQ_NP_682976-MLA43484762899_092020-O.webp","id":6}
+{"title":"Lapiz","price":"80","thumbnail":"https://img.freepik.com/vector-gratis/lapiz_24908-54630.jpg?w=2000","id":7}
+{"title":"lapiz","price":"100","thumbnail":"https://http2.mlstatic.com/D_NQ_NP_850877-MLA49830942226_052022-O.webp","id":8}
+{"title":"casa","price":"150000","thumbnail":"https://http2.mlstatic.com/D_NQ_NP_850877-MLA49830942226_052022-O.webp","id":9}
+{"title":"casa","price":"150000","thumbnail":"https://http2.mlstatic.com/D_NQ_NP_850877-MLA49830942226_052022-O.webp","id":10}

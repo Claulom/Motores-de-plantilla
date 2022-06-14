@@ -8,9 +8,9 @@ product.init();
 
 const router = express.Router();
 
-router.get('/', (req, res)=>{
-    res.send(product.data)
-})
+ router.get('/', (req, res)=>{
+   res.render('lista', {product: product.data, message: 'Se cargo el producto'})
+}) 
 
 router.get('/:id', async (req, res)=>{
     const { id } = req.params;
@@ -28,13 +28,13 @@ router.get('/:id', async (req, res)=>{
         return res.status(400).send({ error: 'El parámetro debe ser mayor a cero' });
     }
     
-    const person = await product.getById(idNumber);
+    const products = await product.getById(idNumber);
     
-    if (!person) {
+    if (!products) {
         return res.status(400).send({ error: `El producto con el id: ${id} no existe` });
     }
     
-    return res.send(person)
+    return res.send( product)
 })
 
 router.post('/', async (req, res)=>{
@@ -46,22 +46,8 @@ router.post('/', async (req, res)=>{
     
     await product.save({ title, price, thumbnail });
     await product.init();
-    return res.send({ message: 'Producto agregado exitosamente'})
+    return res.render({message: 'Producto agregado'})
 })
-
-/* router.put('/:id', async (req, res)=>{
-    try {
-        const { id } = req.params;
-        const { field, value } = req.body;
-        
-        await product.editById(Number(id), field, value);
-        
-        res.send({ message: `El producto con id: ${id} se modificó exitosamente`})
-    } catch (error) {
-        throw error
-    }
-    
-}) */
 
 router.put('/:id', (req, res)=>{
     const idx = this.product.findIndex(p => p.id == id)
@@ -85,6 +71,3 @@ router.delete('/id', (req,res)=>{
         } 
 }) 
 export default router
-
-
-
